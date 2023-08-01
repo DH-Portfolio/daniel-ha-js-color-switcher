@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer{
+    max-width: 1000px;
+    min-height: 600px;
+    margin: auto;
+    background-color: #000;
+}
+.buttonContainer{
+    display:flex;
+    justify-content:center;
+    margin: 1em auto;
+}
+.buttonContainer button{
+    padding: 10px 25px;
+    margin: 1em;
+}
