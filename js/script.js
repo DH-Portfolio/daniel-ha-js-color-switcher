@@ -1,5 +1,6 @@
 let backgroundChanger = document.querySelector(".mainContainer");
 let changeButton = document.querySelector(".changeButton");
+let resetButton = document.querySelector(".resetButton");
 
 
 
@@ -13,5 +14,9 @@ const randomColorGenerator = () =>{
     }
 }
 
-changeButton.addEventListener("click", randomColorGenerator)
+changeButton.addEventListener("click", randomColorGenerator);
+
+resetButton.addEventListener("click", ()=>{
+    backgroundChanger.style.backgroundColor = "#000";
+})
 
