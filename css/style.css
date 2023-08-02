@@ -2,14 +2,36 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
+header{
+    background-color: #fff;
+    padding: 1em 0;
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+}
+header h1{
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    border-bottom: 5px solid #000;
+}
+main{
+    background-color:#212424;
+    padding: 5em;
+}
 .mainContainer{
     max-width: 1000px;
     min-height: 600px;
     margin: auto;
     background-color: #000;
+    border-radius: 15px;
+    height: 100%;
+
 }
+
 .buttonContainer{
     display:flex;
     justify-content:center;
@@ -20,9 +42,24 @@
     margin: 1em;
     border-radius: 15px;
     background-color:#fff;
-    border: 2px solid blue;
+    border: 2px solid #008CFF;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: blue;
+    color: #008CFF;
     cursor: pointer;
+    font-weight: bold
+}
+.buttonContainer .changeButton{
+    background-color: #008CFF;
+    color: #fff;
+}
+.buttonContainer .changeButton:hover{
+    background-color: #0774cd;
+    border: 2px solid #0774cd;
+    transition: ease-in-out 0.3s;
+}
+.buttonContainer .resetButton:hover{
+    background-color: #008CFF;
+    color: #fff;
+    transition: ease-in-out 0.3s;
 }
